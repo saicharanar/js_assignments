@@ -1,5 +1,5 @@
 function squareOf(number) {
-    return number * number;
+    return number ** 2;
 }
 
 function main() {
