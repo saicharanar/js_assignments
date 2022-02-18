@@ -2,16 +2,16 @@ function isOdd(number) {
     return number % 2 !== 0;
 }
 
-function displayOddNumbers(initialNumber, terminalNumber) {
-    for (; initialNumber < terminalNumber; initialNumber++) {
-        if (isOdd(initialNumber)) {
-            console.log(initialNumber);
+function displayOddNumbersBetween(initialNumber, terminalNumber) {
+    for (let element = initialNumber; element < terminalNumber; element++) {
+        if (isOdd(element)) {
+            console.log(element);
         }
     }
 }
 
 function main() {
-    displayOddNumbers(1, 7);
+    displayOddNumbersBetween(1, 7);
 }
 
 main();
