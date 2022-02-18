@@ -1,6 +1,6 @@
 let div = "";
 
-function getTabs(count) {
+function getSpaces(count) {
     let spaces = "";
     for (let i = 1; i < count; i++) {
         spaces += "  ";
@@ -14,12 +14,13 @@ function createDivs(count) {
         return;
     }
     
-    div = getTabs(count) + "<div>\n" + div + getTabs(count) + "</div>\n";
+    div = getSpaces(count) + "<div>\n" + div + getSpaces(count) + "</div>\n";
     createDivs(count - 1);
 }
 
 function main() {
     createDivs(4);
+    // console.log(createDivs(4));
     console.log(div);
 }
 
